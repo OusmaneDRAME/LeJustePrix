@@ -28,6 +28,7 @@ function verifier(nombre) {
         // C'est le juste prix
         instruction.textContent = "#" + coups + " ("+ nombre + ") Félicitation vous avez trouvé le juste prix !";
         instruction.className = "instruction fini"; 
+        prix.disabled = true;
     }
     // Ajouter l'élement instruction devant les autres
     document.querySelector("#instructions").prepend(instruction);
